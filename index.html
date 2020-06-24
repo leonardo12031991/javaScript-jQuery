@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Proyecto con javaScript-jQuery</title>
-  </head>
 
-  <body>
-    <section id="global">
-      <header>
-        <div id="logo">
-           <h1>jQuery</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto con javaScript-jQuery</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  
+  
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--slider-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="/path/to/jquery.bxslider.min.js"></script>
+<!--Mis scripts-->
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+  <section id="global">
+    <header>
+      <div id="logo">
+        <h1>jQuery</h1>
+      </div>
+      <div class="clearfix">
+
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Reloj</a></li>
+          <li><a href="">Sobre mi</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="slider">
+      <div class="bxslider">
+        <div><img src="img/img/hojas.jpg" title="hojas"></div>
+        <div><img src="img/img/rojo.jpg" title="rojo"></div>
+        <div><img src="img/img/cielo.jpg" title="cielo"></div>
+      </div>
+    </div>
+
+    <section id="content">
+      <div id="posts">
+        <article class="post">
+          <h2>Titulo del articulo</h2>
+          <span class="date">Fecha de publicacion </span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum</p>
+          <a href="#" class="button-more">Leer más</a>
+        </article>
+        <article class="post">
+          <h2>Titulo del articulo</h2>
+          <span class="date">Fecha de publicacion </span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum</p>
+          <a href="#" class="button-more">Leer más</a>
+        </article>
+      </div>
+      <aside id="sidebar">
+        <div id="about">
+          <h4><span>Quien soy</span> </h4>
+          <img src="img/img/caracol.jpg" alt="">
+          <p>Lorem Ipsum is simply dummy text of the printing </p>
         </div>
-        <div class="clearfix">
 
-        </div>
-        <nav id="menu">
-          <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Reloj</a></li>
-            <li><a href="">Sobre mi</a></li>
-            <li><a href="">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <div id="slider"></div>
 
-      <section id="content">
-        <div id="posts">
-          <article class="post">
-            <h2>Titulo del articulo</h2>
-            <span class="date">Fecha de publicacion </span>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-            <a href="#" class="button-more">Leer más</a>
-          </article>
-          <article class="post">
-            <h2>Titulo del articulo</h2>
-            <span class="date">Fecha de publicacion </span>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-            <a href="#" class="button-more">Leer más</a>
-          </article>
-        </div>
-        <aside id="sidebar"> 
-          <div id="about">
-            <h4><span>Quien soy</span> </h4>
-            <img src="img/img/caracol.jpg" alt="">
-            <p>Lorem Ipsum is simply dummy text of the printing </p>
-          </div>
-          <div id="login">
 
-          </div>
-
-        </aside>
-        <div class="clearfix">
+        <div id="login">
           <h4><span>Identificate</span> </h4>
           <form>
-<label for="name">Nombre</label>
-<input type="text" name="name">
-<label for="email">Email</label>
-<input type="text" name="email">
-<label for="password">password</label>
-<input type="text" name="password">
-<input type="submit" name="Enviar">
+            <label for="name">Nombre</label>
+            <input type="text" name="name">
+
+            <label for="email">Email</label>
+            <input type="text" name="email">
+
+            <label for="password">password</label>
+            <input type="text" name="password">
+
+            <input type="submit" name="Enviar">
 
 
           </form>
         </div>
-      </section>
+      </aside>
+      <div class="clearfix"></div>
+
+
     </section>
-    <footer>Primera pagina con javaScript-jQuery</footer>
-  </body>
+
+  </section>
+  <footer>Primera pagina con javaScript-jQuery</footer>
+</body>
+
 </html>
